@@ -1,0 +1,42 @@
+---
+import Logo from './Logo.astro'
+import NavMore from './Nav More.vue'
+import links from './Nav Links.js'
+
+const currentPage = (href: string) => {
+    if (Astro.url.pathname !== href) return ''
+
+    return 'border-b-white/50'
+}
+---
+
+<nav
+    class="sticky top-0 transition duration-200 p-8 py-4 h-16 bg-brand-blue text-white"
+>
+    <div class="max-w-5xl mx-auto h-full flex items-center gap-1">
+        <a href="/" class="h-full">
+            <Logo />
+        </a>
+
+        {currentPage}
+        <span class="flex-grow"></span>
+
+        {
+            links.map((link) => {
+                return (
+                    <a
+                        href={link.href}
+                        class={
+                            'hover:bg-white/10 px-4 h-full hidden md:grid place-items-center rounded-sm transition duration-200 border border-transparent ' +
+                            currentPage(link.href)
+                        }
+                    >
+                        {link.text}
+                    </a>
+                )
+            })
+        }
+
+        <NavMore client:load />
+    </div>
+</nav>

@@ -1,0 +1,227 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+const peoples = [
+    [
+        'Mike Buser',
+        'https://static.wixstatic.com/media/1f7b8d_197596eba9c64e59a74998b8ab236370~mv2.jpg/v1/fill/w_289,h_288,fp_0.48_0.34,q_90/1f7b8d_197596eba9c64e59a74998b8ab236370~mv2.jpg',
+    ],
+    [
+        'John Buser',
+        'https://static.wixstatic.com/media/1f7b8d_a875d13282194ae3875f14441ed29ef5~mv2.jpg/v1/fill/w_290,h_288,fp_0.48_0.32,q_90/1f7b8d_a875d13282194ae3875f14441ed29ef5~mv2.jpg',
+    ],
+    [
+        'Melissa B Maners',
+        'https://static.wixstatic.com/media/1f7b8d_bb71055d46784a4cbff9f29901d2191c~mv2.jpg/v1/fill/w_289,h_288,fp_0.54_0.39,q_90/1f7b8d_bb71055d46784a4cbff9f29901d2191c~mv2.jpg',
+    ],
+    [
+        'Susan Reiner',
+        'https://static.wixstatic.com/media/1f7b8d_5e6cff6c25694146bb80ed893c2389a1~mv2.jpg/v1/fill/w_288,h_288,fp_0.49_0.3,q_90/1f7b8d_5e6cff6c25694146bb80ed893c2389a1~mv2.jpg',
+    ],
+    [
+        'Mike Hayes',
+        'https://static.wixstatic.com/media/1f7b8d_3584138bf9f44fab80790c20c4e4902f~mv2.jpg/v1/fill/w_289,h_287,fp_0.47_0.35,q_90/1f7b8d_3584138bf9f44fab80790c20c4e4902f~mv2.jpg',
+    ],
+    [
+        'Susan Harris',
+        'https://static.wixstatic.com/media/1f7b8d_da355b075fd84a018134363ca3c35e55~mv2.jpg/v1/fill/w_309,h_309,fp_0.49_0.27,q_90/1f7b8d_da355b075fd84a018134363ca3c35e55~mv2.jpg',
+    ],
+    [
+        'Luke Dowell',
+        'https://static.wixstatic.com/media/1f7b8d_bbf1b4d69d584d71a3c2332965ce4b19~mv2.jpg/v1/fill/w_309,h_309,fp_0.51_0.34,q_90/1f7b8d_bbf1b4d69d584d71a3c2332965ce4b19~mv2.jpg',
+    ],
+    [
+        'Jay Buser',
+        'https://static.wixstatic.com/media/1f7b8d_8dfb2a2411e64c0c8f2000242acbdd8c~mv2.jpg/v1/fill/w_310,h_309,fp_0.45_0.28,q_90/1f7b8d_8dfb2a2411e64c0c8f2000242acbdd8c~mv2.jpg',
+    ],
+    [
+        'Jim Merkling',
+        'https://static.wixstatic.com/media/1f7b8d_4ec92a21f1af465d83c07748249c4d00~mv2.jpg/v1/fill/w_289,h_288,fp_0.53_0.3,q_90/1f7b8d_4ec92a21f1af465d83c07748249c4d00~mv2.jpg',
+    ],
+    [
+        'Carolyn Williams',
+        'https://static.wixstatic.com/media/1f7b8d_11f39d5548ed4f13a155bccf1c18341f~mv2.jpg/v1/fill/w_289,h_288,fp_0.46_0.31,q_90/1f7b8d_11f39d5548ed4f13a155bccf1c18341f~mv2.jpg',
+    ],
+    [
+        'Cindy Poston',
+        'https://static.wixstatic.com/media/1f7b8d_2bad9372dc4e4e8ab39977374e37b008~mv2.jpg/v1/fill/w_288,h_288,fp_0.49_0.33,q_90/1f7b8d_2bad9372dc4e4e8ab39977374e37b008~mv2.jpg',
+    ],
+]
+---
+
+<Layout title="About">
+    <main>
+        <div class="p-8">
+            <div class="max-w-5xl mx-auto indent-8">
+                <h1 class="text-4xl font-extrabold text-brand-blue indent-0">
+                    ABOUT
+                </h1>
+
+                <br />
+
+                <p>
+                    At Professional Tax we are a family owned and operated
+                    business that has served the tax and accounting needs of
+                    South Central Kentucky taxpayers and businesses for nearly
+                    50 years. Combined with thousands of hours of professional
+                    study and training, we have gained the knowledge of serving
+                    tens of thousands of taxpayers, which puts us in a unique
+                    position to make sure you pay the lowest amount of tax
+                    legally possible.
+                </p>
+
+                <br />
+
+                <p>
+                    Because of our huge amount of experience, we understand the
+                    fear and frustration that comes from dealing with the
+                    Internal Revenue Service and the State of Kentucky. Our team
+                    at Professional Tax will utilize our experience, knowledge
+                    and the fullest extent of the law to aggressively defend
+                    your interests and rights.
+                </p>
+
+                <br />
+                <br />
+
+                <h1 class="text-center text-2xl font-bold">OUR VISION</h1>
+
+                <br />
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-white">
+                    <div
+                        class="flex flex-col gap-2 items-center bg-brand-blue p-4 rounded"
+                    >
+                        <svg
+                            width="24"
+                            height="24"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-8 w-8"
+                        >
+                            <path
+                                d="M12.835 3.162a.747.747 0 0 0 .147-.148h2.562l.035-.001a5.372 5.372 0 0 1 .545 0h.038a3.818 3.818 0 0 1 1.646.369 5.223 5.223 0 0 1 2.34 1.822 5.208 5.208 0 0 1 .804 4.348l-3.281-3.237a.75.75 0 0 0-.527-.216h-4.745a.762.762 0 0 0-.453.152l-1.884 1.428a.968.968 0 0 1-1.358-.184.952.952 0 0 1 .181-1.34l3.95-2.993ZM7.898 14.236l-.013.013-.974.968-.013.012a.906.906 0 0 1-1.261-.012.892.892 0 0 1 0-1.267l.974-.968a.906.906 0 0 1 1.275 0 .892.892 0 0 1 .012 1.254ZM7.608 15.934a.892.892 0 0 0 .013 1.254c.352.35.922.35 1.275 0l.974-.967a.892.892 0 0 0-.14-1.381.906.906 0 0 0-1.122.1l-.013.014-.974.967-.013.013ZM5.5 11.408a.892.892 0 0 1 0 1.267l-.973.968a.906.906 0 0 1-1.276 0 .892.892 0 0 1 0-1.267l.975-.968a.906.906 0 0 1 1.275 0ZM11.854 16.925a.892.892 0 0 1 0 1.267l-.974.968a.902.902 0 0 1-1.275 0 .892.892 0 0 1-.172-1.028l.001-.002a.894.894 0 0 1 .171-.237l.974-.968a.906.906 0 0 1 1.275 0Z"
+                                fill="currentColor"
+                            >
+                            </path>
+
+                            <path
+                                d="M5.344 4.831a6.179 6.179 0 0 1 5.112-1.749L7.979 4.96a2.452 2.452 0 0 0-.466 3.448 2.473 2.473 0 0 0 3.454.467L12.651 7.6h4.185l3.507 3.46a.52.52 0 0 0 .036.04l1.15 1.15a1.439 1.439 0 0 1-1.936 2.124l-.096-.096a.508.508 0 0 0-.06-.052l-1.093-1.092a.5.5 0 1 0-.707.707l1.15 1.15c.042.041.084.081.128.119l.044.044a1.02 1.02 0 0 1-1.441 1.441l-.17-.169a.5.5 0 0 0-.853.363.499.499 0 0 0 .147.365l.223.223a.943.943 0 1 1-1.333 1.333h-.002l-.011-.013-.21-.21a.5.5 0 1 0-.707.707l.218.219a.96.96 0 0 1-1.35 1.367l-1.431-1.36.524-.522a1.884 1.884 0 0 0 0-2.676 1.906 1.906 0 0 0-1.428-.553 1.88 1.88 0 0 0-.556-1.42 1.906 1.906 0 0 0-1.428-.552 1.881 1.881 0 0 0-.556-1.419 1.912 1.912 0 0 0-1.844-.49 1.88 1.88 0 0 0-.541-1.084 1.914 1.914 0 0 0-2.514-.158 6.096 6.096 0 0 1 1.648-5.714Z"
+                                fill="currentColor"
+                            >
+                            </path>
+                        </svg>
+
+                        <span class="flex-grow"></span>
+
+                        To utilize our God-given gifts to help those in need of
+                        assistance.
+                    </div>
+
+                    <div
+                        class="flex flex-col gap-2 items-center bg-brand-blue p-4 rounded"
+                    >
+                        <svg
+                            width="24"
+                            height="24"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-8 w-8"
+                        >
+                            <path
+                                d="M20.25 2c.966 0 1.75.783 1.75 1.75v3.042a2.75 2.75 0 0 1-1.477 2.438l-6.3 3.29A5 5 0 0 1 12 22a5 5 0 0 1-2.223-9.48l-6.3-3.29A2.75 2.75 0 0 1 2 6.792V3.75C2 2.783 2.784 2 3.75 2h16.5ZM12 13.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm4-10H7.997v6.398l3.887 2.03a.25.25 0 0 0 .232 0L16 9.898V3.5Z"
+                                fill="currentColor"
+                            >
+                            </path>
+                        </svg>
+
+                        <span class="flex-grow"></span>
+
+                        To provide the highest quality tax & consulting for both
+                        individuals and businesses.
+                    </div>
+
+                    <div
+                        class="flex flex-col gap-2 items-center bg-brand-blue p-4 rounded"
+                    >
+                        <svg
+                            version="1.0"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24.000000pt"
+                            height="24.000000pt"
+                            viewBox="0 0 24.000000 24.000000"
+                            preserveAspectRatio="xMidYMid meet"
+                            class="h-8 w-8"
+                        >
+                            <g
+                                transform="translate(0.000000,24.000000) scale(0.100000,-0.100000)"
+                                fill="currentColor"
+                            >
+                                <path
+                                    d="M46 198 c-23 -32 -49 -116 -42 -134 14 -37 136 -57 205 -33 29 10 31 14 31 59 0 49 -9 60 -50 60 -26 0 -34 -17 -19 -38 11 -14 11 -15 -1 -4 -18 16 -67 16 -73 0 -3 -7 -6 4 -6 25 -1 21 3 36 8 33 5 -3 14 1 21 9 10 12 10 18 0 30 -18 22 -57 18 -74 -7z"
+                                >
+                                </path>
+                            </g>
+                        </svg>
+
+                        <span class="flex-grow"></span>
+
+                        To build strong, caring relationships with our clients
+                        and remove the fear and myths of dealing with the IRS.
+                    </div>
+
+                    <div
+                        class="flex flex-col gap-2 items-center bg-brand-blue p-4 rounded"
+                    >
+                        <svg
+                            width="24"
+                            height="24"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-8 w-8"
+                        >
+                            <path
+                                d="M14.754 10c.966 0 1.75.784 1.75 1.75v4.749a4.501 4.501 0 0 1-9.002 0V11.75c0-.966.783-1.75 1.75-1.75h5.502Zm-7.623 0c-.35.422-.575.95-.62 1.53l-.01.22v4.749c0 .847.192 1.649.534 2.365A4.001 4.001 0 0 1 2 14.999V11.75a1.75 1.75 0 0 1 1.606-1.744L3.75 10h3.381Zm9.744 0h3.375c.966 0 1.75.784 1.75 1.75V15a4 4 0 0 1-5.03 3.866c.3-.628.484-1.32.525-2.052l.009-.315V11.75c0-.665-.236-1.275-.63-1.75ZM12 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm6.5 1a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm-13 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                                fill="currentColor"
+                            >
+                            </path>
+                        </svg>
+
+                        <span class="flex-grow"></span>
+
+                        To provide our team the opportunity to grow in a
+                        professional family environment.
+                    </div>
+                </div>
+
+                <br />
+                <br />
+
+                <h1 class="text-center text-2xl font-bold">
+                    THE PROTAX FAMILY
+                </h1>
+
+                <br />
+
+                <div
+                    class="indent-0 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:gap-6 xl:gap-8 gap-4"
+                >
+                    {
+                        peoples.map(([name, src]) => {
+                            return (
+                                <div>
+                                    <img src={src} alt={name} class="rounded" />
+
+                                    <p class="text-lg py-2">{name}</p>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>

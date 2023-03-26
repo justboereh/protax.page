@@ -1,0 +1,161 @@
+---
+import Layout from '../layouts/Layout.astro'
+import People from '../components/SVG/People.astro'
+import Reciept from '../components/SVG/Reciept.astro'
+---
+
+<Layout
+    desc="Serving your tax needs since 1969 with over 200 years of combined experience!"
+>
+    <main>
+        <div
+            class="flex flex-col h-screen"
+            style="max-height: calc(100vh - 5rem);"
+        >
+            <div class="bg-brand-blue p-8 text-white h-full flex-grow">
+                <div
+                    class="h-full w-full max-w-5xl mx-auto flex flex-col gap-8"
+                >
+                    <div class="flex flex-col md:flex-row flex-grow gap-2">
+                        <div
+                            class="flex-grow md:max-w-xs lg:max-w-lg flex justify-center flex-col gap-8"
+                        >
+                            <div class="flex flex-col gap-2">
+                                <h1 class="text-3xl md:text-5xl font-bold">
+                                    Serving your tax needs since 1969 with over
+                                    200 years of combined experience!
+                                </h1>
+
+                                <p class="text-white/75">
+                                    Knowledge | Training | Experience
+                                </p>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <a
+                                    href="https://www.1040.com/?did=1522"
+                                    class="bg-white text-brand-blue px-4 py-2 w-fit font-bold tracking-widest rounded-sm hover:bg-opacity-90"
+                                >
+                                    File Taxes Now
+                                </a>
+
+                                <a
+                                    href="tel:2707814141"
+                                    class="px-4 py-2 w-fit font-bold tracking-widest rounded-sm border border-white hover:text-white/90 hover:border-white/90"
+                                >
+                                    Call us
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid place-items-center pb-16">
+                            <People />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="triangle"></div>
+        </div>
+
+        <div class="p-8 py-16">
+            <div
+                class="flex flex-col md:flex-row gap-y-8 gap-x-16 max-w-5xl mx-auto items-center"
+            >
+                <div class="flex justify-center">
+                    <img
+                        src="/img/best-of-bg-award.jpg"
+                        alt="Best of BG award"
+                        class="max-w-xs"
+                    />
+                </div>
+
+                <p class="indent-8">
+                    The Professional Tax Team is proud to have been voted the
+                    best Accountant/CPA! Thank You Bowling Green for over 50
+                    great years!
+                </p>
+            </div>
+        </div>
+
+        <div class="p-8 md:py-16 bg-brand-blue text-white">
+            <div
+                class="flex flex-col md:flex-row gap-y-8 gap-x-16 max-w-5xl mx-auto items-center"
+            >
+                <p class="indent-8">
+                    Taxation WITH Representation. Do not let the Internal
+                    Revenue Service or the State of Kentucky get you down. Are
+                    you being Audited? Do you owe back taxes? Are you being
+                    threatened with Garnishment or Tax Liens?
+                </p>
+
+                <Reciept />
+            </div>
+        </div>
+
+        <div class="p-8 py-16">
+            <div
+                class="flex flex-col gap-y-8 gap-x-16 max-w-5xl mx-auto items-center"
+            >
+                <h1 class="text-xl md:text-2xl font-bold">OUR MISSION</h1>
+
+                <div class="text-center">
+                    <p>
+                        Our Mission is to ensure that “Our Taxpayer Clients pay
+                        the lowest legal amount of Income Tax”. We are dedicated
+                        to your unique Tax preparation needs. Do not settle for
+                        less …….. Utilize our highly qualified Licensed Tax
+                        Professionals who are trained to take advantage of all
+                        the deductions and credits to which you are entitled.
+                    </p>
+
+                    <br />
+
+                    <p>
+                        All of our Tax and Accounting Work is backed by a
+
+                        <b> “Money Back Guarantee”.</b>
+
+                        We are a Family Owned Local Business dedicated to
+                        serving South Central Kentucky.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>
+
+<style is:global>
+    .triangle {
+        border-width: 2rem 100vw 0 0;
+        border-color: #0088ce transparent transparent transparent;
+        border-style: solid;
+    }
+
+    @media (min-width: 640px) {
+        .triangle {
+            border-width: 4rem 100vw 0 0;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .triangle {
+            border-width: 6rem 100vw 0 0;
+        }
+    }
+
+    .bg-long-bars {
+        background: linear-gradient(
+                135deg,
+                #0000 18.75%,
+                #0088ce 0 31.25%,
+                #0000 0
+            ),
+            repeating-linear-gradient(
+                45deg,
+                #0088ce -6.25% 6.25%,
+                #009ae7 0 18.75%
+            );
+        background-size: 20px 20px;
+    }
+</style>
