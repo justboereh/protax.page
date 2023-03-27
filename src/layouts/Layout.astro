@@ -1,6 +1,7 @@
 ---
 import Nav from '../components/Nav.astro'
 import Footer from '../components/Footer.astro'
+import Disclaimer from '../components/Disclaimer.vue'
 
 export interface Props {
     title?: string
@@ -37,6 +38,8 @@ const { title, desc } = Astro.props
 
         <hr />
         <Footer />
+
+        <Disclaimer client:load />
     </body>
 </html>
 
