@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { validate } from '@babel/types'
 import { onMounted, ref, watch } from 'vue'
 import Notify from './SVG/Notify.vue'
+import Open from './SVG/Open.vue'
 
 const disclaimerEnabled = ref(false)
 
@@ -35,23 +35,24 @@ watch(disclaimerEnabled, (value) => {
             <Notify />
 
             <p>
-                This is just a redesign and not the actual website for
-                Professional Tax Service. All rights are to their respected
-                owners.
+                This is a redesign, not the actual website for Professional Tax
+                Service. All rights are to their respected owners.
             </p>
 
             <br />
 
-            <p>Click "Actual site" if you need the actual website.</p>
+            <p>Click "Actual site" to view the actual website.</p>
 
             <br />
 
-            <div class="flex justify-end gap-2">
+            <div class="flex justify-end gap-2 whitespace-nowrap">
                 <a
                     href="https://www.professionaltaxbg.com"
-                    class="text-brand-blue px-4 py-2 w-fit font-bold tracking-widest rounded-sm hover:bg-opacity-90"
+                    class="text-brand-blue p-2 w-fit font-bold tracking-widest rounded-sm hover:bg-opacity-90 flex"
                 >
                     Actual site
+
+                    <Open class="w-3 h-3" />
                 </a>
 
                 <button
